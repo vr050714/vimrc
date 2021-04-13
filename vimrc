@@ -28,7 +28,7 @@ nmap <C-T> :tabnew<CR>
 nmap <C-W> :tabclose<CR>
 
 " Configure powerline
-set rtp+=/Users/vladimir/.local/lib/python3.8/site-packages/powerline/bindings/vim/
+"set rtp+=/Users/vladimir/.local/lib/python3.8/site-packages/powerline/bindings/vim/
 set laststatus=2
 let g:powerline_pycmd='py3'
 
