@@ -13,7 +13,21 @@ set encoding=utf-8
 
 colorscheme zenburn
 
-execute pathogen#infect()
+set nocompatible  " required
+filetype off      " required
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin('~/.vim/bundle')
+Plugin 'VundleVim/Vundle.vim'  " required
+Plugin 'tpope/vim-fugitive'    " Git
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'prabirshrestha/vim-lsp'
+Plugin 'scrooloose/nerdtree'
+Plugin 'davidhalter/jedi-vim'
+call vundle#end()
+
 syntax on
 filetype plugin indent on
 
