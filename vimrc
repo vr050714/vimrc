@@ -21,17 +21,21 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'jnurmine/zenburn'
+Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
+Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
 syntax on
 filetype plugin indent on
 
-colorscheme zenburn
+colorscheme gruvbox
 
-noremap <F3> :NERDTreeToggle<CR>
+noremap <F3> <cmd>NERDTreeToggle<CR>
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
+
+lua require('lspconfig').rust_analyzer.setup{}
+lua require('lspconfig').pylsp.setup{}
