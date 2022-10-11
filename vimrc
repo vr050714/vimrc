@@ -23,7 +23,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
-Plug 'neovim/nvim-lspconfig'
+"Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
 syntax on
@@ -33,9 +33,9 @@ colorscheme gruvbox
 
 noremap <F3> <cmd>NERDTreeToggle<CR>
 
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
 
-lua require('lspconfig').rust_analyzer.setup{}
-lua require('lspconfig').pylsp.setup{}
+"lua require('lspconfig').rust_analyzer.setup{}
+"lua require('lspconfig').pylsp.setup{}
