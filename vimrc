@@ -31,6 +31,9 @@ filetype plugin indent on
 
 colorscheme gruvbox
 
+" This one may require if backspace is processed incorrectly.
+"set backspace=indent,eol,start
+
 noremap <F3> <cmd>NERDTreeToggle<CR>
 
 "let g:airline_powerline_fonts = 1
