@@ -12,6 +12,9 @@ set scrolloff=5
 
 set mouse=a
 
+set t_Co=256
+set background=dark
+
 set cursorline
 set colorcolumn=99
 
